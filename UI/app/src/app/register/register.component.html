@@ -1,0 +1,32 @@
+<h1>Please register!</h1>
+<div class="container">
+<form>
+    <div class="alert alert-warning">
+        <!-- <small *ngIf="invalidLogin" >{{errMsg}}</small> -->
+    </div>
+    <div>
+        <form>  
+        <table  >
+            <tr><td>First Name: <input type="text" name="firstname" placeholder="Enter Your First Name" [(ngModel)]="firstname"></td>
+            <td>Last Name: <input type="text" name="lastname" placeholder="Enter Your Last Name" [(ngModel)]="lastname"></td></tr> 
+
+            <!-- <tr><td>User Name: <input type="text" name="username" placeholder="Enter Your User Name" [(ngModel)]="username"></td></tr>    
+            <tr><td>Password : <input type="password" name="password" placeholder="Enter Your Password" [(ngModel)]="password"></td>
+            <td>Confirm Password : <input type="password" name="con_password" placeholder="Confirm Password" [(ngModel)]="con_password"></td></tr> -->
+
+            <tr><td>Address Line 1: <input type="text" name="add_line1" placeholder="Address Line 1" [(ngModel)]="add_line1"></td>
+            <td>Address Line 2: <input type="text" name="add_line2" placeholder="Address Line 2" [(ngModel)]="add_line2"></td></tr>
+
+            <tr><td>City: <input type="text" name="city" placeholder="City" [(ngModel)]="city"></td></tr>
+            <tr><td>Email: <input type="text" name="email" placeholder="Enter Your Email" [(ngModel)]="email"></td></tr>
+            <tr><td>Mobile Number: <input type="text" name="tel_no" placeholder="Enter Your Mobile Number" [(ngModel)]="tel_no"></td></tr>
+            <tr><td>NIC: <input type="text" name="NIC" placeholder="Enter Your NIC No" [(ngModel)]="NIC"></td></tr>
+            <tr><td>Account No: <input type="text" name="bank_acc_no" placeholder="Enter Your Account No" [(ngModel)]="bank_acc_no"></td></tr>
+            <tr><td>Account No: <input type="text" name="iduser_details" placeholder="id" [(ngModel)]="iduser_details"></td></tr>        
+            <tr><td><input type="submit" name="reg" (click)=handelSubmit() class="btn btn-success"></td></tr>    
+            <tr><td style="height: 100px;"></td></tr>
+        </table>
+        </form>
+    </div>
+</form>
+</div>

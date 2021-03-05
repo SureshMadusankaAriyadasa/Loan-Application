@@ -1,0 +1,17 @@
+<h1>Login!</h1>
+<div class="container">
+
+    <div class="alert alert-warning">
+        <small *ngIf="invalidLogin" >{{errMsg}}</small>
+        <small *ngIf="v">{{success}}</small>
+    </div>
+    <div>
+        
+        <table>
+            <tr><td>User Name: <input type="text" name="username" placeholder="User Name" [(ngModel)]="username"></td></tr>
+            <tr><td>Password : <input type="password" name="password" placeholder="Password" [(ngModel)]="password"></td></tr>
+            <tr><td><button (click)=handelLongin() class="btn btn-success">Login</button></td></tr>
+        
+        </table>
+    </div>
+</div>

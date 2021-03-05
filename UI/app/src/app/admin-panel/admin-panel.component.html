@@ -1,0 +1,69 @@
+<h1>Welcome admin-panel!</h1>
+<h2>Users Details Tables</h2>
+<!-- <div class="container">
+    <div><p>Welcome {{name}}!</p></div>
+</div> -->
+
+<div >
+    <table class="table">
+        <caption>Users Details</caption>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address Line 1</th>
+                <th>Address Line 2</th>
+                <th>City</th>
+                <th>Email</th>
+                <th>tel_no</th>
+                <th>NIC</th>
+                <th>Bank AccNo</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let todo of todos">
+                <td>{{todo.firstname}}</td>
+                <td>{{todo.lastname}}</td>
+                <td>{{todo.add_line1}}</td>
+                <td>{{todo.add_line2}}</td>
+                <td>{{todo.city}}</td>
+                <td>{{todo.email}}</td>
+                <td>{{todo.tel_no}}</td>
+                <td>{{todo.NIC}}</td>
+                <td>{{todo.bank_acc_no}}</td>
+
+                <td><button  class="btn btn-success">Edit</button></td>
+                <td><button  class="btn btn-warning">Delete</button></td>
+                <!-- (click)="updateTodo(todo.id)"
+                (click)="deleteTodo(todo.id)" -->
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2>User Access Tables</h2>
+<div >
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>User Type</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let todo of userts">
+                <td>{{todo.username}}</td>
+                <td>{{todo.usertype}}</td>
+
+                <td><button  class="btn btn-success">Edit</button></td>
+                <td><button  class="btn btn-warning">Delete</button></td>
+                <!-- (click)="updateTodo(todo.id)"
+                (click)="deleteTodo(todo.id)" -->
+            </tr>
+        </tbody>
+    </table>
+</div>
